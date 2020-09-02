@@ -1,0 +1,115 @@
+.search-patient {
+    margin: 0 auto;
+    display: table;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.search-patient-item {
+    background: var(--color-white-dark);
+    padding-left: 20px;
+    width: 875px;
+    height: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    line-height: 50px;
+}
+
+.search-patient-item.header {
+    background: var(--color-green);
+    text-align: center;
+}
+
+.search-patient-item-item {
+    float: left;
+    margin-right: 15px;
+    width: 100px;
+    font-size: 18px;
+    height: 100%;
+}
+
+.search-patient-item-item input {
+     width: 100%;
+     height: 70%;
+     box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 10px;
+    font-size: 15px;
+ }
+
+.search-patient-item-item select {
+    width: 100%;
+    height: 70%;
+    box-sizing: border-box;
+    border: none;
+    background: white;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: white;
+    width: 100%;
+    height: 70%;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+button:hover {
+    background: var(--color-white-dark);
+}
+
+.search-patient-item-item.surname {
+    width: 130px;
+    text-align: left;
+}
+
+.search-patient-item-item.name {
+    width: 120px;
+    text-align: left;
+}
+
+.search-patient-item-item.patronymic {
+    width: 160px;
+    text-align: left;
+}
+
+.search-patient-item-item.gender {
+    width: 60px;
+    text-align: center;
+}
+
+.search-patient-item-item.birthday {
+    width: 100px;
+    text-align: center;
+}
+
+.search-patient-item-item.oms-number {
+    width: 160px;
+    text-align: center;
+}
+
+.search-patient-item-item.edit {
+    text-align: right;
+    width: 30px;
+}
+
+.search-patient-item-item a {
+    text-decoration: none;
+    color: var(--color-gray);
+    background: url("../../icon-edit.svg");
+    display: block;
+    width: 38px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.search-patient-error {
+    margin: 0 auto;
+    font-size: 18px;
+}

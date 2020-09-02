@@ -1,0 +1,110 @@
+:root {
+  --color-green: #dfff80;
+  --color-gray: #555555;
+  --color-red: #fb5045;
+  --color-white-dark: #eeeeee;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.top-menu {
+  background: var(--color-green);
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  min-width: 1000px;
+}
+
+.top-menu .container {
+  display: table;
+  margin: 0 auto;
+}
+
+.top-menu-logo {
+  position: absolute;
+  top: 10px;
+  left: 100px;
+}
+
+.top-menu-item {
+  float: left;
+  height: 60px;
+  line-height: 55px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.top-menu-item-a {
+  display: block;
+  width: 50px;
+  height: 40px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.top-menu-item-a.list {
+  background: url("./icon-list.svg");
+}
+
+.top-menu-item-a.search {
+  background: url("./icon-search.svg");
+  width: 40px;
+}
+
+.top-menu-item-a.add {
+  background: url("./icon-add.svg");
+}
+
+
+.top-menu-search {
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  width: 250px;
+  height: 30px;
+  padding-left: 15px;
+  font-size: 15px;
+}

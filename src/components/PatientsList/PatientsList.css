@@ -1,0 +1,80 @@
+.patients-list {
+    margin: 0 auto;
+    display: table;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.patients-list-item {
+    background: var(--color-white-dark);
+    padding-left: 20px;
+    width: 875px;
+    height: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    line-height: 50px;
+}
+
+.patients-list-item.header {
+    background: var(--color-green);
+    text-align: center;
+}
+
+.patients-list-item-item {
+    float: left;
+    margin-right: 15px;
+    width: 100px;
+    font-size: 18px;
+    height: 100%;
+}
+
+.patients-list-item-item.surname {
+    width: 130px;
+    text-align: left;
+}
+
+.patients-list-item-item.name {
+    width: 120px;
+    text-align: left;
+}
+
+.patients-list-item-item.patronymic {
+    width: 160px;
+    text-align: left;
+}
+
+.patients-list-item-item.gender {
+    width: 60px;
+    text-align: center;
+}
+
+.patients-list-item-item.birthday {
+    width: 100px;
+    text-align: center;
+}
+
+.patients-list-item-item.oms-number {
+    width: 160px;
+    text-align: center;
+}
+
+.patients-list-item-item.edit {
+    text-align: right;
+    width: 30px;
+}
+
+.patients-list-item-item a {
+    text-decoration: none;
+    color: var(--color-gray);
+    background: url("../../icon-edit.svg");
+    display: block;
+    width: 38px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.patients-list-error {
+    margin: 0 auto;
+    font-size: 18px;
+}
