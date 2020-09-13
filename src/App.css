@@ -54,11 +54,13 @@ body {
   height: 60px;
   text-align: center;
   min-width: 1000px;
+  margin-bottom: 30px;
 }
 
 .top-menu .container {
   display: table;
   margin: 0 auto;
+
 }
 
 .top-menu-logo {

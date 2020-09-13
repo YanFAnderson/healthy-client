@@ -1,4 +1,4 @@
-.edit-patient {
+.patient {
     margin: 0 auto;
     background: var(--color-green);
     width: 500px;
@@ -9,14 +9,14 @@
     padding-bottom: 15px;
 }
 
-.edit-patient-header {
+.patient-header {
     padding-top: 15px;
     padding-bottom: 10px;
     text-align: center;
     font-size: 22px;
 }
 
-.edit-patient-item {
+.patient-item {
     width: 500px;
     float: left;
     text-align: center;
@@ -24,7 +24,7 @@
     margin-bottom: 5px;
 }
 
-.edit-patient-item input {
+.patient-item input {
     width: 80%;
     height: 30px;
     outline: none;
@@ -34,7 +34,7 @@
     font-size: 15px;
 }
 
-.edit-patient-item select {
+.patient-item select {
     width: 80%;
     height: 30px;
     outline: none;
@@ -46,7 +46,7 @@
     font-size: 15px;
 }
 
-.edit-patient-item button {
+.patient-item button {
     width: 25%;
     height: 30px;
     border: 2px solid white;
@@ -56,12 +56,12 @@
     outline: none;
 }
 
-.edit-patient-item button:hover {
+.patient-item button:hover {
     border: 2px solid var(--color-white-dark);
     background: var(--color-white-dark);
 }
 
-.edit-patient-error {
+.patient-error {
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -72,15 +72,15 @@
     border-radius: 20px;
 }
 
-.edit-patient-error-header {
+.patient-error-header {
     font-size: 30px;
 }
 
-.edit-patient-error-msg {
+.patient-error-msg {
     font-size: 17px;
 }
 
-.edit-patient-item.delete button {
+.patient-item.delete button {
     width: 15%;
     height: 25px;
     font-size: 15px;

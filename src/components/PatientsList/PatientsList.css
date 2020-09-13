@@ -1,8 +1,6 @@
 .patients-list {
     margin: 0 auto;
     display: table;
-    margin-top: 30px;
-    margin-bottom: 30px;
 }
 
 .patients-list-item {
@@ -19,6 +17,7 @@
 .patients-list-item.header {
     background: var(--color-green);
     text-align: center;
+    margin-top: 0;
 }
 
 .patients-list-item-item {

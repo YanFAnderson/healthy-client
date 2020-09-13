@@ -6,10 +6,10 @@ import {
     Switch,
     Route,
 } from 'react-router-dom';
-import PatientsList from "./components/PatientsList/PatientsList";
-import AddPatient from "./components/AddPatient/AddPatient";
-import EditPatient from "./components/EditPatient/EditPatient";
-import SearchPatient from "./components/SearchPatient/SearchPatient"
+import PatientsList from "./pages/PatietnsListPage/PatientsListPage";
+import AddPatient from "./pages/PatientAddPage/PatientAddPage";
+import EditPatient from "./pages/PatientEditPage/PatientEditPage";
+import SearchPatient from "./pages/SearchPatientPage/SearchPatientPage"
 import logoMain from "./logo-main.png"
 
 function App() {
