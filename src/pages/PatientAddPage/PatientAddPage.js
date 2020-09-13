@@ -1,12 +1,14 @@
 import React from "react";
 import api from "../../services/PatientsService"
 import PatientForm from "../../components/PatientForm/PatientForm";
+import LoadingRing from "../../components/LoadingRing/LoadingRing";
 import {Redirect} from 'react-router-dom';
 
 class PatientAddPage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            loading: false,
             success: false,
             error: false,
             error_msg: '',
@@ -35,13 +37,14 @@ class PatientAddPage extends React.Component {
     }
 
     handleSubmit(event) {
+        this.setState({loading: true});
         api.create(this.state.data)
             .then((response) => {
-                this.setState({success: true});
+                this.setState({success: true, loading: false});
             })
             .catch((error) => {
                 console.log(error);
-                this.setState({error: true, error_msg: error.response.data.message})
+                this.setState({error: true, error_msg: error.response.data.message, loading: false})
             });
         event.preventDefault();
     }
@@ -53,9 +56,13 @@ class PatientAddPage extends React.Component {
                 {this.state.success &&
                 <Redirect to='/'/>
                 }
-                <PatientForm data={this.state.data} error={error} header={"Add patient"}
-                             handleChange={this.handleChange}
-                             handleSubmit={this.handleSubmit}/>
+                {this.state.loading ?
+                    <LoadingRing/> :
+
+                    <PatientForm data={this.state.data} error={error} header={"Add patient"}
+                                 handleChange={this.handleChange}
+                                 handleSubmit={this.handleSubmit}/>
+                }
             </div>
         );
     }
